@@ -1,0 +1,28 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-settings.json",
+  "permissions": {
+    "allow": [
+      "Bash(python *)",
+      "Bash(py *)",
+      "Bash(pip install *)",
+      "Bash(pip list)",
+      "Bash(pytest *)",
+      "Bash(git status)",
+      "Bash(git diff *)",
+      "Bash(git log *)",
+      "Bash(git add *)",
+      "WebFetch(domain:github.com)",
+      "WebFetch(domain:raw.githubusercontent.com)"
+    ],
+    "ask": [
+      "Bash(git commit *)",
+      "Bash(git push *)"
+    ],
+    "deny": [
+      "Read(./config/config.yaml)",
+      "Read(./key.py)",
+      "Read(./data/**)",
+      "Read(./*.xlsx)"
+    ]
+  }
+}

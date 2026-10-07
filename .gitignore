@@ -1,0 +1,9 @@
+config/config.yaml
+key.py
+data/
+logs/
+*.xlsx
+.venv/
+__pycache__/
+.claude/settings.local.json
+.idea/

@@ -1,0 +1,5 @@
+selenium>=4.6
+webdriver-manager
+openpyxl
+PyYAML
+pytest

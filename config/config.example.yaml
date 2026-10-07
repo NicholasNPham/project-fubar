@@ -1,0 +1,26 @@
+# Copy to config/config.yaml (gitignored) and fill in real values there.
+# Never put real values in this file.
+
+stac:
+  url: "https://stac.example.invalid"
+  username: "YOUR_USERNAME"
+  password: "YOUR_PASSWORD"
+  # Seconds to wait for any one STAC element.
+  wait_timeout: 10
+  # Seconds a preview may take to load or show the corrupted message.
+  preview_timeout: 10
+  # Seconds to hold after each step so a person can watch. 0 for real runs.
+  action_pause: 0
+
+paths:
+  # Optional. Full path to a chromedriver.exe matching your Chrome. Blank lets
+  # Selenium find one.
+  chromedriver: ""
+  logs: "logs"
+
+run:
+  # Save the output copy after this many rows.
+  checkpoint_every: 25
+  # Start a fresh browser every this many cases, to stop memory building up
+  # over a long run. 0 turns it off.
+  restart_every_cases: 100
